@@ -1,0 +1,41 @@
+let myInput;
+
+function setup() {
+
+  createCanvas(300, 200);
+  myInput = createInput("hello");
+  myInput.position(0,(height-25));
+}
+
+function draw() {
+  background(220);
+  let msg = myInput.value();
+  text(msg, 25,55)
+  noStroke(255, 255, 255);
+  fill(0,0,0)
+  
+  if(msg === "Congo"||msg==="congo"){
+    background(251, 222, 74);
+    noStroke(255, 255, 255); 
+    fill(0, 149, 67)
+    triangle(0,0, width*(2/3), 0,  0, height); 
+    //green triangle
+    fill(220, 36, 31);
+    triangle(width,height, width, 0, width*(1/3), height,);
+    //red triangle
+    
+    //console log
+    console.log("congo");
+  }else if(msg === "Denmark"||msg === "denmark"){
+    background(200, 16, 46);
+    var l2Xpos=width*(14/37);
+    strokeWeight(width*(4/37))
+    stroke(255, 255, 255); 
+    line(0, height/2, width, height/2); //horizontal line
+    line(l2Xpos, 0, l2Xpos, height); // verical line
+    
+    //console log
+    console.log("denmark");
+    
+  }
+}
