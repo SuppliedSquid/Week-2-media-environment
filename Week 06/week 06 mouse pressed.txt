@@ -1,0 +1,19 @@
+var toggle = true;
+
+function setup() {
+  createCanvas(800, 300);
+  rectMode(CENTER);
+}
+
+function draw() {
+  if( mouseIsPressed=== true){
+    toggle =!toggle
+  }
+  
+  if(mouseIsPressed=== true){
+    background(1,186,240);
+  }else{
+    background(250,150,150);
+  }
+
+}
